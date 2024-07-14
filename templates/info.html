@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <a href="/">Back to Home Page</a>
+     
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Info</title>
+</head>
+<body>
+    <h1>{{template_program}}</h1>
+    <h3>DESCRIPTION</h3>
+    <ul>
+        {% for char in template_description %}
+            <li>{{ char }}</li>
+        {% endfor %}
+    </ul>
+    <h3>WHY I CHOOSE THIS:</h3>
+    <ul>
+        {% for char in template_detail %}
+            <li>{{ char }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
